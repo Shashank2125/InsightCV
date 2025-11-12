@@ -19,14 +19,14 @@ import FileUploader from "./FileUploader";
 import { signOutUser } from "@/lib/actions/user.action";
 
 interface Props {
-  ownerId: string;
+  $id: string;
   accountId: string;
   fullName: string;
   avatar: string;
   email: string;
 }
 
-const MobileNavigation = ({ ownerId, accountId, fullName, email, avatar }: Props) => {
+const MobileNavigation = ({ $id: ownerId, accountId, fullName, email, avatar }: Props) => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   return (

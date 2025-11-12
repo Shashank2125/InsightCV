@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  //size limit to avoid blocking from nextjs
   experimental: {
     serverActions: {
       bodySizeLimit: "100MB",
